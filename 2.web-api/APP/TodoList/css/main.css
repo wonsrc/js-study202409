@@ -1,0 +1,87 @@
+.wrapper {
+  background: #e9ecef;
+  padding: 64px;
+  height: 100vh;
+}
+
+.todo-template {
+  width: 512px;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.todo-template .app-title {
+  background: skyblue;
+  height: 64px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 520px;
+  color: #fff;
+}
+
+.todo-insert {
+  width: 520px;
+  background: aquamarine;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+.todo-template .content .todo-insert #todo-text {
+  flex-basis: 85%;
+  font-size: 20px;
+  padding: 14px;
+  background: darkgray;
+  color: #fff;
+}
+
+.todo-template .content .todo-insert #add {
+  flex-basis: 15%;
+  font-size: 25px;
+}
+
+.todo-template .content .todo-insert #add:hover {
+  background: black;
+  color: #fff;
+}
+.todo-template .content .todo-list {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+}
+
+.todo-template .content .todo-list li {
+  display: flex;
+  padding: 25px;
+  font-size: 15px;
+}
+
+.todo-template .content .todo-list-item {
+  display: flex;
+}
+
+.todo-template .content .todo-list .todo-list-item .checkbox {
+  flex: 1;
+}
+
+/* modify, romove */
+.todo-template .content .todo-list .todo-list-item .modify ::before {
+  margin-right: 10px;
+  color: green;
+  font-size: 25px;
+}
+
+.todo-template .content .todo-list .todo-list-item .remove {
+  color: red;
+  font-size: 25px;
+}
+
+.success {
+  text-decoration: line-through;
+  color: gray;
+}
